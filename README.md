@@ -12,13 +12,13 @@ macaddress,ipmi url,ipmi user,ipmi password,ipmi tool
 d4:be:d9:b3:8f:0d,compute001-drac.redhat.com,root,calvin,pxe_ipmitool
 d4:be:d9:b3:8f:10,compute002-drac.redhat.com,root,calvin,pxe_ipmitool
 d4:be:d9:b3:8f:11,compute003-drac.redhat.com,root,calvin,pxe_ipmitool
-```
 
 **macaddress** - Mac Address of NIC that will PXE.
 **ipmi url** - URL to the drac/ilo/etc.
 **ipmi user** - Username to login to the drac/ilo/etc.
 **ipmi password** - Password to login to the drac/ilo/etc.
 **ipmi tool** - Which tool to use, when in doubt, use pxe_ipmitool.
+```
 
 ## Exmple output
 ```
