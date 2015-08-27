@@ -10,12 +10,12 @@ def main(argv):
     try:
         opts, args = getopt.getopt(argv,"c",["csv="])
     except :
-        print " -csv <inputfile>"
+        print "csv-to-instack.py -c <inputfile>"
         sys.exit(2)
 
     for opt, arg in opts:
        if opt == '-h':
-           print ' - <inputfile>'
+           print 'csv-to-instack.py -c <inputfile>'
            sys.exit()
        elif opt in ("-c", "--csv"):
            inputfile = arg
