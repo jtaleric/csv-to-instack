@@ -28,11 +28,13 @@ def main(argv):
     print "Opening %s" % inputfile
     csvFile =  open(inputfile)
     data = list(csv.reader(csvFile))
-   
-#   ['# mac', ' ipmi-addr', ' user', ' pass']
     
+    firstrow = True 
     jdata = defaultdict(list) 
     for value in data:
+        if firstrow :
+            firstrow = False
+            continue
         jdata['nodes'].append({'pm_password' : value[3], 
         'pm_type' : value[4], 
         'mac' : [value[0]], 

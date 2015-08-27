@@ -1,2 +1,3 @@
+macaddress,ipmi url,ipmi user, ipmi password, ipmi tool
 mac12345678,ipmi,user,pass,pxe_ipmitool
 mac12345678,ipmi1,user1,pass2,pxe_ipmitool
