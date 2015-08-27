@@ -5,3 +5,57 @@ Convert a CSV of your Overcloud nodes into the instackenv.json format.
 ```
 python csv-to-instack.py --csv=target-csv-file
 ```
+
+## Example CSV
+```
+d4:be:d9:b3:8f:0d,compute001-drac.redhat.com,root,calvin,pxe_ipmitool
+d4:be:d9:b3:8f:10,compute002-drac.redhat.com,root,calvin,pxe_ipmitool
+d4:be:d9:b3:8f:11,compute003-drac.redhat.com,root,calvin,pxe_ipmitool
+```
+
+## Exmple output
+```
+{
+    "nodes": [
+        {
+            "arch": "x86_64", 
+            "cpu": "2", 
+            "disk": "20", 
+            "mac": [
+                "d4:be:d9:b3:8f:0d"
+            ], 
+            "memory": "1024", 
+            "pm_addr": "root", 
+            "pm_password": "calvin", 
+            "pm_type": "pxe_ipmitool", 
+            "pm_user": "compute001-drac.redhat.com"
+        }, 
+        {
+            "arch": "x86_64", 
+            "cpu": "2", 
+            "disk": "20", 
+            "mac": [
+                "d4:be:d9:b3:8f:10"
+            ], 
+            "memory": "1024", 
+            "pm_addr": "root", 
+            "pm_password": "calvin", 
+            "pm_type": "pxe_ipmitool", 
+            "pm_user": "compute002-drac.redhat.com"
+        }, 
+        {
+            "arch": "x86_64", 
+            "cpu": "2", 
+            "disk": "20", 
+            "mac": [
+                "d4:be:d9:b3:8f:11"
+            ], 
+            "memory": "1024", 
+            "pm_addr": "root", 
+            "pm_password": "calvin", 
+            "pm_type": "pxe_ipmitool", 
+            "pm_user": "compute003-drac.redhat.com"
+        }
+    ]
+}
+```

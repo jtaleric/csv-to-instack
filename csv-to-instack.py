@@ -38,10 +38,10 @@ def main(argv):
         jdata['nodes'].append({'pm_password' : value[3], 
         'pm_type' : value[4], 
         'mac' : [value[0]], 
-        'cpu' : "foo", 
-        'memory' : "foo", 
-        'disk' : "foo", 
-        'arch' : "foo", 
+        'cpu' : "2", 
+        'memory' : "1024", 
+        'disk' : "20", 
+        'arch' : "x86_64", 
         'pm_user' : value[1], 
         'pm_addr' : value[2]})
 
