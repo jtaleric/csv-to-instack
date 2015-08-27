@@ -7,6 +7,8 @@ python csv-to-instack.py --csv=target-csv-file
 ```
 
 ## Example CSV
+Always provide the header row. The code ignores the first row, since it assumes it is the header
+
 ```
 macaddress,ipmi url,ipmi user,ipmi password,ipmi tool
 d4:be:d9:b3:8f:0d,compute001-drac.redhat.com,root,calvin,pxe_ipmitool
