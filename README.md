@@ -26,7 +26,7 @@ d4:be:d9:b3:8f:11,compute003-drac.redhat.com,root,calvin,pxe_ipmitool
 
 **ipmi tool** - Which tool to use, when in doubt, use pxe_ipmitool.
 
-## Exmple output
+## Example output
 ```
 {
     "nodes": [
@@ -38,10 +38,10 @@ d4:be:d9:b3:8f:11,compute003-drac.redhat.com,root,calvin,pxe_ipmitool
                 "d4:be:d9:b3:8f:0d"
             ], 
             "memory": "1024", 
-            "pm_addr": "root", 
+            "pm_addr": "compute001-drac.redhat.com", 
             "pm_password": "calvin", 
             "pm_type": "pxe_ipmitool", 
-            "pm_user": "compute001-drac.redhat.com"
+            "pm_user": "root"
         }, 
         {
             "arch": "x86_64", 
@@ -51,10 +51,10 @@ d4:be:d9:b3:8f:11,compute003-drac.redhat.com,root,calvin,pxe_ipmitool
                 "d4:be:d9:b3:8f:10"
             ], 
             "memory": "1024", 
-            "pm_addr": "root", 
+            "pm_addr": "compute002-drac.redhat.com", 
             "pm_password": "calvin", 
             "pm_type": "pxe_ipmitool", 
-            "pm_user": "compute002-drac.redhat.com"
+            "pm_user": "root"
         }, 
         {
             "arch": "x86_64", 
@@ -64,10 +64,10 @@ d4:be:d9:b3:8f:11,compute003-drac.redhat.com,root,calvin,pxe_ipmitool
                 "d4:be:d9:b3:8f:11"
             ], 
             "memory": "1024", 
-            "pm_addr": "root", 
+            "pm_addr": "compute003-drac.redhat.com", 
             "pm_password": "calvin", 
             "pm_type": "pxe_ipmitool", 
-            "pm_user": "compute003-drac.redhat.com"
+            "pm_user": "root"
         }
     ]
 }
